@@ -1,1 +1,1 @@
-https://Hotimpulse.github.io/rsschool-cv/cv
+https://Hotimpulse.github.io/rsschool-cv/
