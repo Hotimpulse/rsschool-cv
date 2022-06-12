@@ -12,43 +12,43 @@
     <title>cv</title>
 </head>
 <body>
+    <div class="wrapper">
     <header class="page-header">
         <div class="container-nav">
             <nav class="nav">
                 <ul class="nav-list">
                 <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                 <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                 </ul>
               </nav>
         </div>
     </header>
     <main>
-        <div class="container">
-            <section class="section" id="contacts">
+            <section class="section-profile" id="contacts">
                 <img class="avatar" src="./assets/IMG_2537.jpg" alt="avatar of Lev Kazakov"/>
                 <h1 class="section-title">Hi, my name is Lev Kazakov</h1>
                 <h2 class="about-me__job">I'm a junior Front-End Developer</h2>
-                <div>
+                   <div class="contact-info"> 
                     <h2>Contact information</h2>
-                    <ul class="contact-info">
+                    <ul>
                         <li>Phone: +7-969-280-27-07</li>
                         <li>Email: kazakov.leo@mail.ru</li>
                         <li>Telegram: @levthechef</li>
-                        <li><a href="https://www.linkedin.com/in/levkazakov247/">LinkedIn</a></li>
-                        <li><a href="https://www.behance.net/levthechef/">Behance</a></li>
-                        <li><a href="https://github.com/Hotimpulse">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/levkazakov247/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.behance.net/levthechef/" target="_blank">Behance</a></li>
+                        <li><a href="https://github.com/Hotimpulse" target="_blank">GitHub</a></li>
                     </ul>
-                </div>  
+                   </div>
             </section>
-            <section class="section" id="summary">
-                <h2 class="section-title">Summary</h2>
+            <section class="section" id="about">
+                <h2 class="section-title">About me</h2>
                 Growing up, I studied in multiple international schools across Southeast Asia. 
                 This experience has put me on an endless path of knowledge acquisition.</br></br>
                 Having learned English and Mandarin Chinese, I am now actively pursuing Frontend Development as I am striving to learn the necessary programming languages.
@@ -78,15 +78,25 @@
             <section class="section" id="projects">
                 <h2 class="section-title">Some of my recent projects:</h2>
                 <div class="projects-tiles">
-                    
-                    <img class="tile-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
-                    <a href="https://codepen.io/Hotimpulse/pen/gOvrmBj" target="_blank" class="projectile">Tribute</a>
-                   <a href="https://codepen.io/Hotimpulse/pen/vYdKdjV" target="_blank" class="projectile">
-                  <img class="tile-image" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?" alt="project">
-                    <p>Landing page</p></a>
-                      <a href="https://codepen.io/Hotimpulse/pen/NWyNagP" target="_blank" class="projectile">
-                      <img class="tile-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="project">
-                    <p>Form</p></a>
+                    <div class="tile-wrapper">
+                        <img class="tile-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                        <div class="btn">
+                            <a href="https://codepen.io/Hotimpulse/pen/gOvrmBj" target="_blank">Tribute</a>
+                        </div>
+                    </div>
+                    <div class="tile-wrapper">
+                        <img class="tile-image" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?" alt="project">
+                        <div class="btn">
+                            <a href="https://codepen.io/Hotimpulse/pen/vYdKdjV" target="_blank">Landing page</a>
+                        </div>
+                        
+                    </div>
+                    <div class="tile-wrapper">
+                        <img class="tile-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="project">
+                        <div class="btn">
+                            <a href="https://codepen.io/Hotimpulse/pen/NWyNagP" target="_blank">Form</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section" id="education">
@@ -94,13 +104,17 @@
                 <p class="sub-title">
                     <dl>
                         <dt>2016-2018 (MA degree)</dt>
-                        <dd>National Research University Higher School of Economics (HSE), Moscow, Russia. Master's program in Asian Studies</dd>
+                        <dd>National Research University Higher School of Economics (HSE), Master's program in Asian Studies, Moscow, Russia.</dd>
+                        <dt>2014-2015 (1 year language program)</dt>
+                        <dd>Chongqing Normal University, Chongqing, China.</dd>
                         <dt>2012-2016 (BA degree)</dt>
                         <dd>Moscow City University, Bachelor’s program in Linguistics, Chinese Translation, Moscow, Russia.</dd>
+                        <dt>prior to 2012</dt>
+                        <dd>International schools across Southeast Asia (Thailand, Malaysia)</dd>
                     </dl>
                 </p>
             </section>
-            <section class="section" id="english">
+            <section class="section" id="languages">
                 <h2 class="section-title">Languages I speak:</h2>
                 <ul>
                     <li>Russian (Native)</li>
@@ -117,7 +131,7 @@
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-footer">
             <p>© 2022 by Lev Kazakov</p>
             <a href="https://github.com/Hotimpulse" target="_blank">GitHub</a>
             <a href="https://rs.school/js/" target="_blank">
