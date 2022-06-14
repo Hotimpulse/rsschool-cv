@@ -2,20 +2,12 @@ html {
     scroll-behavior: smooth; 
   }
 
-@media (max-width: 800px) .body {
-  background-color: #fff;
-  font-size: 18px;
-}
-
 body {
     margin: 1.5em;
     font-family: Poppins, Roboto, montserrat, sans-serif;
     font-weight: 500;
     font-size: 20px;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: linear-gradient(
       155deg,
       hsl(23deg 100% 46%) 0%,
@@ -36,44 +28,46 @@ body {
       hsl(228deg 100% 41%) 93%
     );
     background-repeat: no-repeat;
-    color: #fff;
+    background-attachment: fixed;
 }
 
-  .wrapper {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.wrapper {
+  max-width: 1440px;
+  width: auto;
+  margin: 0 auto;
+}
 
-  .page-header {
-    position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px;
-    top: 0;
-    left: 0;
-    background-color:rgb(113, 5, 255);
-    opacity: 69%;
-    z-index: 4;
+.page-header {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+  .nav {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      top: 0;
+      left: 0;
+      background-color:rgba(129, 21, 218, 0.5)
   }
 
   .nav-list {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style: none;
-      margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
   }
 
-  .nav-link {
-      padding: 0 20px;
-      line-height: 50px;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      opacity: 100%;
+  .nav-list > li {
+    padding: 0 15px;
+  }
+
+  .nav-item :hover {
+    background: rgb(213, 4, 255);
   }
 
   .nav-list > li :hover {
@@ -81,13 +75,16 @@ body {
   }
 
   .section-profile {
+    max-width: auto;
+    width: 100%;
+    margin-top: 400px;
+  }
+
+  .wrapper-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 3em;
-    margin-bottom: 2em;
     align-items: center;
-    padding: 0%;
+    width: 0 auto;
   }
 
   .avatar {
@@ -97,32 +94,21 @@ body {
       border-style: none;
       margin: 0;
       padding: 100px;
-      position: relative;
+      position: absolute;
       z-index: -1;
-  }
-
-  .container-contacts {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .contact-info {
-    width: 100%;
-    max-width: 1440px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
   }
 
   h1 {
       font-size: 40px;
       text-decoration-color: #fff;
+      padding-top: 100px;
+      text-align: center;
   }
 
   .about-me__job {
     margin: 0;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    text-align: center;
   }
 
   .projects-tiles {
@@ -130,37 +116,39 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 2%;
     width: 100%;
-    max-width: auto;
     justify-content: center;
     transition-property: all;
     transition-duration: 1s;
     transition-delay: 0.1s;
-    opacity: 70%;
-    background: #000000;
-    padding: 20px 0;
+    background: #0000002a;
+    padding: 20px 0px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
   }
 
+
   a {
     outline: none;
     text-decoration: none;
     color: #fff;
+    font-size: 1.3rem;
+  }
+
+  p, h1, h2, li {
+    color: white;
   }
 
   li :hover {
     color: rgb(255, 217, 5);
   }
 
-  
   .btn {
     display: inline-block;
   }
 
-  
-  .tile-wrapper :hover {
-    box-shadow: 1px 1px 15px 2px rgba(250, 133, 24, 0.9);
+  .btn :hover {
+    color: rgb(255, 217, 5);
   }
   
   .tile-image {
@@ -169,19 +157,37 @@ body {
     object-fit: cover;
   }
 
-  
+  .tile-shadow :hover {
+    box-shadow: 0px 0px 22px 1px rgba(255, 217, 5, 0.7);
+  }
+
   .section {
     max-width: auto;
-    width: 1000px;
+    width: 100%;
+  }
+
+  .js-code {
+    display: block;
+    background: #0000002a;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+    width: 300px;
+    color: white;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .code-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
   }
 
   .rs-logo {
     height: 40px;
     width: auto;
-  }
-  
-  .contact-info {
-    line-height: 1.8;
   }
 
   .container-footer {
@@ -196,4 +202,39 @@ body {
 
   .container-footer :hover {
     color: rgb(255, 217, 5);
+  }
+
+  @media screen and (max-width: 700px) {
+
+    body, .wrapper-main {
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    a, p, li {
+      font-size: 14px;
+    }
+    .section, .section-profile {
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .projects-tiles {
+      padding: 50px 0px;
+    }
+
+
   }

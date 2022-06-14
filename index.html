@@ -14,10 +14,8 @@
 <body>
     <div class="wrapper">
     <header class="page-header">
-        <div class="container-nav">
             <nav class="nav">
                 <ul class="nav-list">
-                <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -27,12 +25,11 @@
                 <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                 </ul>
-              </nav>
-        </div>
+            </nav>
     </header>
-    <main>
+    <main class="wrapper-main">
+            <img class="avatar" src="./assets/IMG_2537.jpg" alt="avatar of Lev Kazakov"/>
             <section class="section-profile" id="contacts">
-                <img class="avatar" src="./assets/IMG_2537.jpg" alt="avatar of Lev Kazakov"/>
                 <h1 class="section-title">Hi, my name is Lev Kazakov</h1>
                 <h2 class="about-me__job">I'm a junior Front-End Developer</h2>
                    <div class="contact-info"> 
@@ -49,7 +46,7 @@
             </section>
             <section class="section" id="about">
                 <h2 class="section-title">About me</h2>
-                Growing up, I studied in multiple international schools across Southeast Asia. 
+                <p>Growing up, I studied in multiple international schools across Southeast Asia. 
                 This experience has put me on an endless path of knowledge acquisition.</br></br>
                 Having learned English and Mandarin Chinese, I am now actively pursuing Frontend Development as I am striving to learn the necessary programming languages.
                 </br></br>
@@ -79,20 +76,20 @@
                 <h2 class="section-title">Some of my recent projects:</h2>
                 <div class="projects-tiles">
                     <div class="tile-wrapper">
-                        <img class="tile-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                        <a class="tile-shadow" href="https://codepen.io/Hotimpulse/pen/gOvrmBj" target="_blank"><img class="tile-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project"></a>
                         <div class="btn">
                             <a href="https://codepen.io/Hotimpulse/pen/gOvrmBj" target="_blank">Tribute</a>
                         </div>
                     </div>
                     <div class="tile-wrapper">
-                        <img class="tile-image" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?" alt="project">
+                        <a class="tile-shadow" href="https://codepen.io/Hotimpulse/pen/vYdKdjV" target="_blank"><img class="tile-image" src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?" alt="project"></a>
                         <div class="btn">
                             <a href="https://codepen.io/Hotimpulse/pen/vYdKdjV" target="_blank">Landing page</a>
                         </div>
                         
                     </div>
                     <div class="tile-wrapper">
-                        <img class="tile-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="project">
+                        <a class="tile-shadow" href="https://codepen.io/Hotimpulse/pen/NWyNagP" target="_blank"><img class="tile-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="project"></a>
                         <div class="btn">
                             <a href="https://codepen.io/Hotimpulse/pen/NWyNagP" target="_blank">Form</a>
                         </div>
@@ -102,16 +99,16 @@
             <section class="section" id="education">
                 <h2 class="section-title">My education:</h2>
                 <p class="sub-title">
-                    <dl>
-                        <dt>2016-2018 (MA degree)</dt>
-                        <dd>National Research University Higher School of Economics (HSE), Master's program in Asian Studies, Moscow, Russia.</dd>
-                        <dt>2014-2015 (1 year language program)</dt>
-                        <dd>Chongqing Normal University, Chongqing, China.</dd>
-                        <dt>2012-2016 (BA degree)</dt>
-                        <dd>Moscow City University, Bachelor’s program in Linguistics, Chinese Translation, Moscow, Russia.</dd>
-                        <dt>prior to 2012</dt>
-                        <dd>International schools across Southeast Asia (Thailand, Malaysia)</dd>
-                    </dl>
+                    <ul>
+                        <li>2016-2018 (MA degree)</li>
+                        <a>National Research University Higher School of Economics (HSE), Master's program in Asian Studies, Moscow, Russia.</a>
+                        <li>2014-2015 (1 year language program)</li>
+                        <a>Chongqing Normal University, Chongqing, China.</a>
+                        <li>2012-2016 (BA degree)</li>
+                        <a>Moscow City University, Bachelor’s program in Linguistics, Chinese Translation, Moscow, Russia.</a>
+                        <li>prior to 2012</li>
+                        <a>International schools across Southeast Asia (Thailand, Malaysia)</a>
+                    </ul>
                 </p>
             </section>
             <section class="section" id="languages">
@@ -124,9 +121,20 @@
             </section>
             <section class="section" id="code">
                 <h2 class="section-title">Some of my JS code:</h2>
-                <code>
-
+                <div class="code-box">
+                <code class="js-code">
+                    function testElseIf(val) { <br>
+                        if (val > 10) {<br>
+                        return "Greater than 10";<br>
+                      } else if (val < 5) {<br>
+                        return "Smaller than 5";<br>
+                      } else {<br>
+                        return "Between 5 and 10";<br>
+                    }<br>
+                    }<br>
+                    testElseIf(7);<br>                    
                 </code>
+                </div>
             </section>
         </div>
     </main>
