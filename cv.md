@@ -1,4 +1,4 @@
-# Lev Kazakov # 
+# Lev Kazakov #
 
 ## Junior Frontend Developer ##
 
@@ -6,7 +6,7 @@
 
 * Phone: +7-969-280-27-07
 * Email: kazakov.leo@mail.ru
-* Telegram: @levthechef 
+* Telegram: @levthechef
 * [LinkedIn](https://www.linkedin.com/in/levkazakov247/)
 * [Behance](https://www.behance.net/levthechef/)
 * [GitHub](https://github.com/Hotimpulse)
@@ -32,6 +32,6 @@ My goal is to shape visual services for people all over the world as a Frontend 
 * Figma
 ## Courses ##
 
-1. Responsive Web Design Course on freeCode.org - [certification](https://www.freecodecamp.org/certification/fcc29861128-12c5-4936-b9d1-431b6931ffb8/responsive-web-design) 
+1. Responsive Web Design Course on freeCode.org - [certification](https://www.freecodecamp.org/certification/fcc29861128-12c5-4936-b9d1-431b6931ffb8/responsive-web-design)
 
 2. JavaScript algorithms and data structures course on freeCode.org (in progress)
