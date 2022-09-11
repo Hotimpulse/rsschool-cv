@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     margin: 1.5em;
@@ -42,7 +42,8 @@ body {
   top: 0;
   left: 0;
 }
-  .nav {
+
+.nav {
       display: flex;
       justify-content: flex-end;
       position: fixed;
@@ -51,67 +52,67 @@ body {
       top: 0;
       left: 0;
       background-color:rgba(129, 21, 218, 0.5)
-  }
+}
 
-  .nav-list {
+.nav-list {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     list-style: none;
     line-height: 1.5em;
     width: 100%;
-  }
+}
 
-  .nav-list > li {
+.nav-list > li {
     padding: 0 15px;
-  }
+}
 
-  .nav-item :hover {
+.nav-item :hover {
     background: rgb(213, 4, 255);
-  }
+}
 
-  .nav-list > li :hover {
+.nav-list > li :hover {
     color: rgb(255, 217, 5);
-  }
+}
 
-  .section-profile {
+.section-profile {
     max-width: auto;
     width: 100%;
     margin-top: 400px;
-  }
+}
 
-  .wrapper-main {
+.wrapper-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 0 auto;
-  }
+}
 
-  .avatar {
-      width: 300px;
-      height: auto;
-      border-radius: 50%;
-      border-style: none;
-      margin: 0;
-      padding: 100px;
-      position: absolute;
-      z-index: -1;
-  }
+.avatar {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  border-style: none;
+  margin: 0;
+  padding: 100px;
+  position: absolute;
+  z-index: -1;
+}
 
-  h1 {
+h1 {
       font-size: 40px;
       text-decoration-color: #fff;
       padding-top: 100px;
       text-align: center;
-  }
+}
 
-  .about-me__job {
+.about-me__job {
     margin: 0;
     padding-bottom: 50px;
     text-align: center;
-  }
+}
 
-  .projects-tiles {
+.projects-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     gap: 2%;
@@ -125,48 +126,48 @@ body {
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
-  }
+}
 
 
-  a {
+a {
     outline: none;
     text-decoration: none;
     color: #fff;
     font-size: 1.3rem;
-  }
+}
 
-  p, h1, h2, li {
+p, h1, h2, li {
     color: white;
-  }
+}
 
-  li :hover {
+li :hover {
     color: rgb(255, 217, 5);
-  }
+}
 
-  .btn {
+.btn {
     display: inline-block;
-  }
+}
 
-  .btn :hover {
+.btn :hover {
     color: rgb(255, 217, 5);
-  }
+}
   
-  .tile-image {
+.tile-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
-  }
+}
 
-  .tile-shadow :hover {
+.tile-shadow :hover {
     box-shadow: 0px 0px 22px 1px rgba(255, 217, 5, 0.7);
-  }
+}
 
-  .section {
+.section {
     max-width: auto;
     width: 100%;
-  }
+}
 
-  .js-code {
+.js-code {
     display: block;
     background: #0000002a;
     border-radius: 5px;
@@ -175,22 +176,22 @@ body {
     color: white;
     align-items: center;
     padding: 20px;
-  }
+}
 
-  .code-box {
+.code-box {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-bottom: 50px;
-  }
+}
 
-  .rs-logo {
+.rs-logo {
     height: 40px;
     width: auto;
-  }
+}
 
-  .container-footer {
+.container-footer {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
@@ -198,47 +199,45 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
+}
 
-  .container-footer :hover {
+.container-footer :hover {
     color: rgb(255, 217, 5);
-  }
+}
 
-  .edu-info {
+.edu-info {
     list-style: none;
-  }
+}
 
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-    body, .wrapper-main {
+body, .wrapper-main {
       font-size: 16px;
       font-weight: 400;
       width: 100%;
-    }
+}
 
-    h2 {
+h2 {
       font-size: 18px;
-    }
+}
 
-    h1 {
+h1 {
       font-size: 20px;
-    }
+}
 
-    a, p, li {
+a, p, li {
       font-size: 14px;
     }
     .section, .section-profile {
       width: 100%;
-    }
+}
 
-    img {
+img {
       max-width: 100%;
       height: auto;
-    }
+}
 
-    .projects-tiles {
+.projects-tiles {
       padding: 50px 0px;
-    }
-
-
-  }
+}
+}
